@@ -1,0 +1,92 @@
+.hero {
+  max-width: 1600px;
+  background: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/mobile/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/mobile/bg-main@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/tablet/bg-main.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/tablet/bg-main@2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/deckstope/bg-main.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/deckstope/bg-main@2x.jpg);
+  }
+}
+
+.hero__bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__text {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin: auto;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

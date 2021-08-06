@@ -1,0 +1,32 @@
+// UTILS
+@import "./utils/variables";
+
+// BASE
+@import "./base/common";
+@import "./base/container";
+
+// COMPONENTS
+@import "./components/logo";
+@import "./components/activ-page";
+@import "./components/mail-tel";
+@import "./components/button";
+@import "./components/social-icons";
+@import "./components/portfolio-button";
+@import "./components/backdrop";
+@import "./components/modal-window";
+
+// LAYOUT
+@import "./layout/navigation";
+@import "./layout/header-contact";
+@import "./layout/hero";
+@import "./layout/advantage";
+@import "./layout/work-image";
+@import "./layout/ourteam";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio-card";
+@import "./layout/modal-window-content";
+@import "./layout/burger";
+
+// UTILS
+@import "./utils/is-hidden";

@@ -1,0 +1,45 @@
+.contact {
+  display: none;
+  // margin-left: auto;
+  // display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+// .contact__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.contact__item {
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+    margin-right: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 0px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

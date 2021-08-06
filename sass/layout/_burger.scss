@@ -1,0 +1,135 @@
+.burg-icon {
+  width: 24px;
+  height: 16px;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  border: none;
+
+  &:focus .burger-icon-svg,
+  &:hover .burger-icon-svg {
+    fill: var(--acent-color);
+  }
+  @media screen and (min-width: 480px) {
+    // display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  padding: 48px 40px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  .container {
+    // position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 480px) {
+    // display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+// .mob-menu .container {
+//   position: relative;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
+
+.mob-btn-closed {
+  position: absolute;
+  background-color: white;
+  border: none;
+  width: 19px;
+  height: 19px;
+  top: 21px;
+  right: 25px;
+  background-color: transparent;
+
+  &:focus .burger-icon-svg,
+  &:hover .burger-icon-svg {
+    fill: var(--acent-color);
+  }
+}
+
+// .mob-nav-list {
+//   margin-bottom: 302px;
+// }
+
+.mob-nav-item:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.mob-nav-item:focus .mob-nav-link,
+.mob-nav-item:hover .mob-nav-link {
+  color: var(--acent-color);
+}
+.mob-nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-mob-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--acent-color);
+  margin-bottom: 32px;
+}
+
+.mob-mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-nav-contact {
+  margin-bottom: 64px;
+}
+
+.mob-social-list {
+  display: flex;
+}
+
+.mob-social-link-item {
+  padding: 0 5px;
+
+  &:nth-child(2n) {
+    color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mob-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--acent-color);
+}

@@ -1,0 +1,37 @@
+.mail-tel {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+}
+
+.icon-mailphone {
+  margin-right: 10px;
+  transition: fill 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  vertical-align: middle;
+
+  .mail-tel:hover &,
+  .mail-tel:focus & {
+    fill: var(--acent-color);
+  }
+}
+
+.mail-tel--header {
+  font-weight: 500;
+  color: var(--third-text);
+}
+
+.icon-mailphone--header {
+  fill: var(--third-text);
+}
+
+.mail-tel--footer {
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
