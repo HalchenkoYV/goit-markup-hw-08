@@ -17,12 +17,18 @@
 
 .advantage__item {
   width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 60px) / 2);
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
   }
   @media screen and (min-width: 1200px) {
     display: block;
@@ -53,7 +59,7 @@
   letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   color: var(--main-text);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 480px) {
     font-size: 28px;
@@ -68,6 +74,7 @@
     letter-spacing: 0.03em;
   }
   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -82,6 +89,10 @@
   text-transform: uppercase;
   color: var(--main-text);
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .advantage__secondary-text {
@@ -90,5 +101,5 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--third-text);
-  height: 75px;
+  // height: 75px;
 }
